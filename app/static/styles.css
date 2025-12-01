@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap");
+
+body{
+    margin: 0;
+    font-family: "Google Sans Code", sans-serif;
+}
+
+#root{
+    display: flex;
+    height: 100vh;
+    background: gray;
+}
+
+.menu_lateral{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+    background: #2C2336;
+}
+
+#corpo_dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #22192C;
+}
+
+.logo{
+    display: flex;
+    padding: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 30px;
+    width: auto;
+}
+
+.menu_botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_botoes button{
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: start;
+    padding: 15px 40px;
+    transition: 0.2s ease-out;
+}
+
+.menu_botoes button:hover{
+    border-left: solid 1px white;
+    background: #5B4C73;
+}
+
+.div_produto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: start;
+    padding: 12px 30px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.div_produto img{
+    height: 20px;
+    width: auto;
+}
+
+.div_produto p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.div_produto:hover{
+    padding-left: 35px;
+    border-left: solid 1px white;
+    background: #5B4C73;
+}
+
+.cabecalho_corpo{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 15px;
+    height: 50px;
+    background: #2C2336;
+}
+
+.cabecalho_corpo img{
+    height: 22px;
+    width: autos;
+}
+
+.cabecalho_corpo h1{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#conteudo_dashboard{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#barra_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barra_1 h1{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.div_pesquisa{
+    display: flex;
+    align-items: center;
+    padding: 3px 13px;
+    border-radius: 9px;
+    border: solid 1px white;
+}
+
+.div_pesquisa img{
+    height: 20px;
+    width: auto;
+}
+
+.div_pesquisa input{
+    border: none;
+    background: transparent;
+    padding: 8px 15px;
+    color: rgb(216, 214, 214);
+    outline: none;
+}
+
+#lista_produtos{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.item_lista{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    cursor: pointer;
+    color: white;
+    transition: 0.15s ease-out;
+    background: #332642;
+    font-size: 15px;
+    border-bottom: solid 1px gray;
+    animation: slideIn 0.25s ease-out forwards;
+}
+
+.item_lista:hover{
+    background: #433558;
+    padding-left: 11px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.campos_produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #433158;
+    padding: 10px;
+    border-radius: 5px 0;
+}
+
+.campos_produto p{
+    margin: 0;
+}
+
+.conteudo_corpo{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.header_historico{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_historico img{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+.header_historico p{
+    margin: 0;
+    color: white;
+}
+
+.HistoricoConteudo{
+    flex: 1;
+}
+
+.HistoricoConteudoLine {
+    flex: 1;
+    display: flex;
+    max-width: 50%;
+    height: 300px !important; /* fixa o tamanho vertical */
+    padding: 10px;
+    border-radius: 5px;
+    gap: 30px;
+    background: #433158;
+}
+
+.HistoricoConteudoLine canvas {
+    flex: 1;
+    max-width: 100%;
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

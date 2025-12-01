@@ -1,0 +1,6 @@
+apscheduler==3.11.1
+fastapi==0.123.0
+pydantic==2.12.5
+pydantic_settings==2.12.0
+selenium==4.38.0
+SQLAlchemy==2.0.44
