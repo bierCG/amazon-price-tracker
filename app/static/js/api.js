@@ -1,22 +1,22 @@
 export const API = {
     async getProdutos() {
-        return fetchJSON('http://127.0.0.1:8000/produtos/');
+        return fetchJSON('https://amazon-price-tracker-50qq.onrender.com/produtos/');
     },
 
     async getProdutosPorNome(nome) {
-        return fetchJSON(`http://127.0.0.1:8000/produtos/nome/${nome}`);
+        return fetchJSON(`https://amazon-price-tracker-50qq.onrender.com/produtos/nome/${nome}`);
     },
 
     async getProdutoPorAsin(asin) {
-        return fetchJSON(`http://127.0.0.1:8000/produtos/asin/${asin}`);
+        return fetchJSON(`https://amazon-price-tracker-50qq.onrender.com/produtos/asin/${asin}`);
     },
 
     async getHistorico(asin) {
-        return fetchJSON(`http://127.0.0.1:8000/historico/${asin}`);
+        return fetchJSON(`https://amazon-price-tracker-50qq.onrender.com/historico/${asin}`);
     },
 
     async executeScraping() {
-        return fetchJSONPost('http://127.0.0.1:8000/scrap/monitorar', { method: 'POST' });
+        return fetchJSONPost('https://amazon-price-tracker-50qq.onrender.com/scrap/monitorar', { method: 'POST' });
     }
 };
 
